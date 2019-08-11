@@ -5,7 +5,7 @@
    version="3.0" metadata-complete="true">
 
    <display-name>Spring MVC Project</display-name>
-   <description>A Spring MVC project using Thymeleaf for the views.</description>
+   <description>A Spring MVC project using React+Redux for the views.</description>
 
    <context-param>
       <!-- Spring XML context -->

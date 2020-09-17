@@ -1,7 +1,7 @@
 /**
  * The MIT License (MIT)
  * <p>
- * Copyright (c) 2019 the original author or authors.
+ * Copyright (c) 2020 the original author or authors.
  * <p>
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -26,8 +26,6 @@ package com.bernardomg.example.spring_mvc_react_archetype_example.test.unit.erro
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.runner.JUnitPlatform;
-import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
 import org.springframework.test.web.servlet.MockMvc;
@@ -36,7 +34,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import com.bernardomg.example.spring_mvc_react_archetype_example.controller.error.GlobalExceptionHandler;
+import com.bernardomg.example.spring_mvc_react_archetype_example.controller.GlobalExceptionHandler;
 import com.bernardomg.example.spring_mvc_react_archetype_example.controller.entity.ExampleEntityController;
 import com.bernardomg.example.spring_mvc_react_archetype_example.service.ExampleEntityService;
 import com.bernardomg.example.spring_mvc_react_archetype_example.test.config.UrlConfig;
@@ -47,7 +45,6 @@ import com.bernardomg.example.spring_mvc_react_archetype_example.test.config.Url
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-@RunWith(JUnitPlatform.class)
 public final class TestGlobalExceptionHandler {
 
     /**

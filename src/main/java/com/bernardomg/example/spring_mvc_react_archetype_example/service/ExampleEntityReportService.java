@@ -1,7 +1,7 @@
 /**
  * The MIT License (MIT)
  * <p>
- * Copyright (c) 2019 the original author or authors.
+ * Copyright (c) 2020 the original author or authors.
  * <p>
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@
 
 package com.bernardomg.example.spring_mvc_react_archetype_example.service;
 
-import net.sf.jasperreports.engine.JasperPrint;
+import java.io.OutputStream;
 
 import com.bernardomg.example.spring_mvc_react_archetype_example.model.ExampleEntity;
 
@@ -43,6 +43,7 @@ public interface ExampleEntityReportService {
      *            data to populate the report
      * @return the report for the data
      */
-    public JasperPrint getReport(final Iterable<? extends ExampleEntity> data);
+    public void getReport(final Iterable<? extends ExampleEntity> data,
+            final OutputStream output);
 
 }

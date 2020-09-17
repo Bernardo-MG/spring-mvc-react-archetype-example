@@ -1,7 +1,7 @@
 /**
  * The MIT License (MIT)
  * <p>
- * Copyright (c) 2019 the original author or authors.
+ * Copyright (c) 2020 the original author or authors.
  * <p>
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -30,11 +30,9 @@ import javax.validation.ConstraintViolation;
 import javax.validation.Validator;
 
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.runner.JUnitPlatform;
-import org.junit.runner.RunWith;
 
 import com.bernardomg.example.spring_mvc_react_archetype_example.model.form.ExampleEntityForm;
 
@@ -46,7 +44,6 @@ import com.bernardomg.example.spring_mvc_react_archetype_example.model.form.Exam
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-@RunWith(JUnitPlatform.class)
 public final class TestExampleEntityFormValidation {
 
     /**
@@ -84,10 +81,10 @@ public final class TestExampleEntityFormValidation {
 
         errors = validator.validate(form);
 
-        Assert.assertEquals(1, errors.size());
+        Assertions.assertEquals(1, errors.size());
 
         error = errors.iterator().next();
-        Assert.assertEquals("name", error.getPropertyPath().toString());
+        Assertions.assertEquals("name", error.getPropertyPath().toString());
     }
 
     /**
@@ -105,10 +102,10 @@ public final class TestExampleEntityFormValidation {
 
         errors = validator.validate(form);
 
-        Assert.assertEquals(1, errors.size());
+        Assertions.assertEquals(1, errors.size());
 
         error = errors.iterator().next();
-        Assert.assertEquals("name", error.getPropertyPath().toString());
+        Assertions.assertEquals("name", error.getPropertyPath().toString());
     }
 
     /**

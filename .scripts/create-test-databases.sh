@@ -9,9 +9,9 @@ set -o nounset
 set -e
 
 # MySQL tables
-mysql -e "create database IF NOT EXISTS spring_mvc_react_archetype_example;" -uroot
+mysql -e "create database IF NOT EXISTS ${artifactId.replace("-", "_")};" -uroot
 
 # PostgreSQL tables
-psql -c 'create database spring_mvc_react_archetype_example;' -U postgres
+psql -c 'create database ${artifactId.replace("-", "_")};' -U postgres
 
 exit 0

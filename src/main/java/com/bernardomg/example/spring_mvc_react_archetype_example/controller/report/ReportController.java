@@ -1,7 +1,7 @@
 /**
  * The MIT License (MIT)
  * <p>
- * Copyright (c) 2019 the original author or authors.
+ * Copyright (c) 2020 the original author or authors.
  * <p>
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,6 +27,7 @@ package com.bernardomg.example.spring_mvc_react_archetype_example.controller.rep
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.IOException;
+import java.io.OutputStream;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -35,10 +36,6 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import net.sf.jasperreports.engine.JRException;
-import net.sf.jasperreports.engine.JasperExportManager;
-import net.sf.jasperreports.engine.JasperPrint;
 
 import com.bernardomg.example.spring_mvc_react_archetype_example.service.ExampleEntityReportService;
 import com.bernardomg.example.spring_mvc_react_archetype_example.service.ExampleEntityService;
@@ -94,25 +91,22 @@ public class ReportController {
      * 
      * @param response
      *            HTTP response
-     * @throws JRException
-     *             if there is a problem during the report generation
      * @throws IOException
      *             if there is a problem when streaming into the response
      */
     @GetMapping(path = "/pdf")
     public void getPdfReport(final HttpServletResponse response)
-            throws JRException, IOException {
-        final JasperPrint jasperPrint;
-
-        jasperPrint = exampleEntityReportService
-                .getReport(exampleEntityService.getAllEntities());
+            throws IOException {
+        final OutputStream output;
 
         response.setContentType(MediaType.APPLICATION_PDF_VALUE);
         response.setHeader("Content-disposition",
                 String.format("inline; filename=%s.pdf", FILENAME));
 
-        JasperExportManager.exportReportToPdfStream(jasperPrint,
-                response.getOutputStream());
+        output = response.getOutputStream();
+
+        exampleEntityReportService
+                .getReport(exampleEntityService.getAllEntities(), output);
     }
 
 }

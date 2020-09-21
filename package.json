@@ -1,19 +1,19 @@
 {
-   "name": "spring-mvc-react-archetype-example",
+   "name": "spring-mvc-react-maven-archetype-example",
    "version": "0.0.1-SNAPSHOT",
    "description": "A Spring MVC project using React+Redux for the views.",
    "author": "Bernardo Martínez Garrido",
-   "homepage": "https://github.com/bernardo-mg/spring-mvc-react-archetype-example",
+   "homepage": "https://github.com/bernardo-mg/spring-mvc-react-maven-archetype-example",
    "license": "MIT",
    "keywords": [
       "keywords"
    ],
    "repository": {
       "type": "git",
-      "url": "git@github.com:bernardo-mg/spring-mvc-react-archetype-example.git"
+      "url": "git@github.com:bernardo-mg/spring-mvc-react-maven-archetype-example.git"
    },
    "bugs": {
-      "url": "https://www.github.com/bernardo-mg/spring-mvc-react-archetype-example/issues"
+      "url": "https://www.github.com/bernardo-mg/spring-mvc-react-maven-archetype-example/issues"
    },
    "scripts": {
       "development": "cross-env NODE_ENV=development webpack --config webpack.dev.js",

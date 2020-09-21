@@ -19,13 +19,13 @@
    <!-- ********************************************** -->
 
    <groupId>com.bernardomg.example</groupId>
-   <artifactId>spring-mvc-react-archetype-example</artifactId>
+   <artifactId>spring-mvc-react-maven-archetype-example</artifactId>
    <version>0.0.1-SNAPSHOT</version>
    <packaging>war</packaging>
 
    <name>Spring MVC Project</name>
    <description>A Spring MVC project using React+Redux for the views.</description>
-   <url>https://github.com/bernardo-mg/spring-mvc-react-archetype-example</url>
+   <url>https://github.com/bernardo-mg/spring-mvc-react-maven-archetype-example</url>
    <inceptionYear>2020</inceptionYear>
 
    <licenses>
@@ -41,20 +41,20 @@
    <!-- ********************************************** -->
 
    <scm>
-      <connection>scm:git:https://github.com/bernardo-mg/spring-mvc-react-archetype-example.git</connection>
-      <developerConnection>scm:git:https://github.com/bernardo-mg/spring-mvc-react-archetype-example.git</developerConnection>
+      <connection>scm:git:https://github.com/bernardo-mg/spring-mvc-react-maven-archetype-example.git</connection>
+      <developerConnection>scm:git:https://github.com/bernardo-mg/spring-mvc-react-maven-archetype-example.git</developerConnection>
       <tag>head</tag>
-      <url>https://www.github.com/bernardo-mg/spring-mvc-react-archetype-example</url>
+      <url>https://www.github.com/bernardo-mg/spring-mvc-react-maven-archetype-example</url>
    </scm>
 
    <issueManagement>
       <system>GitHub</system>
-      <url>https://www.github.com/bernardo-mg/spring-mvc-react-archetype-example/issues</url>
+      <url>https://www.github.com/bernardo-mg/spring-mvc-react-maven-archetype-example/issues</url>
    </issueManagement>
 
    <ciManagement>
       <system>Github</system>
-      <url>https://www.github.com/bernardo-mg/spring-mvc-react-archetype-example/actions</url>
+      <url>https://www.github.com/bernardo-mg/spring-mvc-react-maven-archetype-example/actions</url>
       <notifiers />
    </ciManagement>
 
@@ -63,7 +63,7 @@
          <uniqueVersion>false</uniqueVersion>
          <id>releases</id>
          <name>Releases Repository</name>
-         <url>https://api.bintray.com/maven/bernardo-mg/maven/spring-mvc-react-archetype-example</url>
+         <url>https://api.bintray.com/maven/bernardo-mg/maven/spring-mvc-react-maven-archetype-example</url>
       </repository>
       <snapshotRepository>
          <uniqueVersion>false</uniqueVersion>

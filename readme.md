@@ -12,8 +12,8 @@ Before beginning with the new project there are a few things which should be edi
 
 Note that the Maven site is using the [Docs Maven Skin](https://github.com/Bernardo-MG/docs-maven-skin), which will have a few configuration requirements of its own.
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.bernardomg.example/spring-mvc-react-archetype-example.svg)][maven-repo]
-[![Bintray](https://api.bintray.com/packages/bernardo-mg/maven/spring-mvc-react-archetype-example/images/download.svg)][bintray-repo]
+[![Maven Central](https://img.shields.io/maven-central/v/com.bernardomg.example/spring-mvc-react-maven-archetype-example.svg)][maven-repo]
+[![Bintray](https://api.bintray.com/packages/bernardo-mg/maven/spring-mvc-react-maven-archetype-example/images/download.svg)][bintray-repo]
 
 [![Release docs](https://img.shields.io/badge/docs-release-blue.svg)][site-release]
 [![Development docs](https://img.shields.io/badge/docs-develop-blue.svg)][site-develop]
@@ -135,12 +135,12 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 
 The project has been released under the [MIT License][license].
 
-[bintray-repo]: https://bintray.com/bernardo-mg/maven/spring-mvc-react-archetype-example/view
-[maven-repo]: https://mvnrepository.com/artifact/com.bernardomg.example/spring-mvc-react-archetype-example
-[issues]: https://github.com/bernardo-mg/spring-mvc-react-archetype-example/issues
-[javadoc-develop]: https:///spring-mvc-react-archetype-example/apidocs
-[javadoc-release]: https:///spring-mvc-react-archetype-example/apidocs
+[bintray-repo]: https://bintray.com/bernardo-mg/maven/spring-mvc-react-maven-archetype-example/view
+[maven-repo]: https://mvnrepository.com/artifact/com.bernardomg.example/spring-mvc-react-maven-archetype-example
+[issues]: https://github.com/bernardo-mg/spring-mvc-react-maven-archetype-example/issues
+[javadoc-develop]: https:///spring-mvc-react-maven-archetype-example/apidocs
+[javadoc-release]: https:///spring-mvc-react-maven-archetype-example/apidocs
 [license]: https://www.opensource.org/licenses/mit-license.php
-[scm]: https://github.com/bernardo-mg/spring-mvc-react-archetype-example
-[site-develop]: https:///spring-mvc-react-archetype-example
-[site-release]: https:///spring-mvc-react-archetype-example
+[scm]: https://github.com/bernardo-mg/spring-mvc-react-maven-archetype-example
+[site-develop]: https:///spring-mvc-react-maven-archetype-example
+[site-release]: https:///spring-mvc-react-maven-archetype-example

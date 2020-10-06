@@ -25,12 +25,12 @@ Note that the Maven site is using the [Docs Maven Skin](https://github.com/Berna
 
 The project by default comes with a useful series of features:
 
-- Preconfigured POM to begin developing a new [Spring MVC](https://spring.io) project.
+- Preconfigured POM to begin developing a new [Spring MVC](https://spring.io) project with [Spring Boot}(https://spring.io/projects/spring-boot).
 - Initial sample project including working persistence and exception handling
 - Integration with [Thymeleaf](http://www.thymeleaf.org/) for the view templates.
-- Using [Bootstrap](http://getbootstrap.com/) for the UI.
+- Using [React](https://reactjs.org/) for the UI.
 - Using [Liquibase](http://www.liquibase.org/) for database versioning.
-- Integration with [Jasper Reports](http://community.jaspersoft.com/) for generating PDFs.
+- Integration with [iText](https://itextpdf.com/) for generating PDFs.
 - Prepared for [Github Workflow](https://docs.github.com/en/actions/configuring-and-managing-workflows), including configuration files and deployment scripts. Check the [Archetype documentation](http://docs.bernardomg.com/maven/library-maven-archetype) to find out more.
 - Unit and integration tests suites ready to be run with [JUnit](http://junit.org) just by using the Maven test and verify commands.
 - A Maven site, using the [Docs Maven Skin](https://github.com/Bernardo-MG/docs-maven-skin), to contain the documentation, the Javadocs and several reports.
@@ -69,7 +69,7 @@ All other dependencies are handled through Maven, and noted in the included POM 
 
 ### Profiles
 
-Maven profiles are included for setting up the database and an embedded server.
+Maven profiles are included for setting up the database.
 
 | Profile  | Database              |
 |----------|-----------------------|
@@ -94,7 +94,7 @@ To run the project locally use the following Maven command:
 mvn spring-boot:run -P h2,development
 ```
 
-With this the project will be accessible at [http://localhost:8080/].
+It will be accessible at [http://localhost:8080/](http://localhost:8080/).
 
 ### Running the tests
 
@@ -111,7 +111,7 @@ mvn verify -P h2,development
 When creating the WAR file the database connection credentials should be read from the environment:
 
 ```
-mvn package -P production,mysql -D database.auth.source=env
+mvn package -P production,mysql
 ```
 
 Check the documentation for more information.

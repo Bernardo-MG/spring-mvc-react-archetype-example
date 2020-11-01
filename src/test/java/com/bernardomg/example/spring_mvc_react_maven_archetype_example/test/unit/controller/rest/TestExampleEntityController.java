@@ -21,7 +21,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
 package com.bernardomg.example.spring_mvc_react_maven_archetype_example.test.unit.controller.rest;
 
 import java.util.ArrayList;
@@ -92,7 +91,7 @@ public final class TestExampleEntityController {
         result.andExpect(MockMvcResultMatchers.status().isOk());
 
         // The response model contains the expected attributes
-        result.andExpect(MockMvcResultMatchers.jsonPath(".content",
+        result.andExpect(MockMvcResultMatchers.jsonPath("$.content",
                 Matchers.hasSize(3)));
     }
 
